@@ -1,3 +1,6 @@
+"""
+same configuration in a YAML format for the dictionary approach
+"""
 import logging
 import logging.config
 import yaml
