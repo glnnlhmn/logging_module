@@ -1,4 +1,5 @@
 import logging
+
 """
 Example can be uncommented and run one at a time to see output
 

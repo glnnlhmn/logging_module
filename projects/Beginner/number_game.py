@@ -13,9 +13,11 @@ upper = int(input("Enter Upper bound:- "))
 # generating random number between
 # the lower and upper
 x = random.randint(lower, upper)
-print("\n\tYou've only ",
-      round(math.log(upper - lower + 1, 2)),
-      " chances to guess the integer!\n")
+print(
+    "\n\tYou've only ",
+    round(math.log(upper - lower + 1, 2)),
+    " chances to guess the integer!\n",
+)
 
 # Initializing the number of guesses.
 count = 0
@@ -30,8 +32,7 @@ while count < math.log(upper - lower + 1, 2):
 
     # Condition testing
     if x == guess:
-        print("Congratulations you did it in ",
-              count, " try")
+        print("Congratulations you did it in ", count, " try")
         # Once guessed, loop will break
         # FIXME: Add logging for correct guess
         break
@@ -41,7 +42,6 @@ while count < math.log(upper - lower + 1, 2):
         print("You Guessed too high!")
 
     # FIXME: Add logging for wrong guess
-
 
 
 # If Guessing is more than required guesses,

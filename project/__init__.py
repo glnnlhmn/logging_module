@@ -10,9 +10,8 @@ for level in levels:
     handler.setLevel(getattr(logging, level))
     logger.addHandler(handler)
 
+
 def add_module_handler(logger, level=logging.DEBUG):
-    handler = logging.FileHandler(
-        f"/tmp/module-{logger.name.replace('.', '-')}.log"
-    )
+    handler = logging.FileHandler(f"/tmp/module-{logger.name.replace('.', '-')}.log")
     handler.setLevel(level)
     logger.addHandler(handler)

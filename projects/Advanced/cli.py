@@ -9,6 +9,8 @@ import sys
 
 from typing import Optional
 from main import main as menu
+
+
 def create_parser() -> argparse.ArgumentParser:
     """process the command line for dspBonus the BonusParser"""
 
@@ -39,11 +41,13 @@ def create_parser() -> argparse.ArgumentParser:
 
     return parser
 
+
 def parse_cli_arguments(argv) -> Optional[argparse.Namespace]:
     # parse the command line
     args = create_parser().parse_args(argv[1:])
 
     return args
+
 
 def main(argv: Optional[list[str]] = None) -> int:
     """Main entry point for dspBonus the BonusParser"""

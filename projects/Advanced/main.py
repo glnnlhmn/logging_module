@@ -6,12 +6,17 @@ log errors with stack
 log start and end of main
 """
 
+
 def print_menu():
-    print("""
+    print(
+        """
     1. Print hello world
     2. Create an error
     3. Exit
-    """)
+    """
+    )
+
+
 def main():
 
     while True:
@@ -26,8 +31,6 @@ def main():
             break
         else:
             print("Invalid choice")
-
-
 
 
 if __name__ == "__main__":
