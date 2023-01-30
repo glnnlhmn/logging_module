@@ -3,12 +3,12 @@ import sys
 
 logger = logging.getLogger("pylog")
 logger.setLevel(logging.DEBUG)
-h1 = logging.FileHandler(filename="/tmp/records.log")
-h1.setLevel(logging.INFO)
-h2 = logging.StreamHandler(sys.stderr)
-h2.setLevel(logging.ERROR)
-logger.addHandler(h1)
-logger.addHandler(h2)
+handler_1 = logging.FileHandler(filename="/tmp/records.log")
+handler_1.setLevel(logging.INFO)
+handler_2 = logging.StreamHandler(sys.stderr)
+handler_2.setLevel(logging.ERROR)
+logger.addHandler(handler_1)
+logger.addHandler(handler_2)
 logger.info("testing %d.. %d.. %d..", 1, 2, 3)
 
 logger.debug("This is a debug message")

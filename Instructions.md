@@ -1,6 +1,7 @@
 # Python Logging
 ### Practice with the logging module
 
+Exercises have been assigned to one of three experience see details below.
 ______
 ## Beginner Instructions
 
